@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #015DC8;" styleClass="uistyle" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kelvin.javafxspringboot.controller.SimpleUiController">
+   <children>
+      <ImageView fitHeight="769.0" fitWidth="733.0" layoutX="-16.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/background-while.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="471.0" fitWidth="498.0" layoutX="39.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/pessoa.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="731.0" layoutY="113.0" prefHeight="480.0" prefWidth="469.0">
+         <children>
+            <Text fill="WHITE" layoutX="153.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME!">
+               <font>
+                  <Font name="Arial Italic" size="30.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtFielUsername" layoutX="88.0" layoutY="164.0" prefHeight="43.0" prefWidth="293.0" promptText="Username" style="-fx-background-radius: 10;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtFielPassword" layoutX="88.0" layoutY="240.0" prefHeight="43.0" prefWidth="293.0" promptText="Password" style="-fx-background-radius: 10;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnLogin" layoutX="88.0" layoutY="312.0" mnemonicParsing="false" onAction="#authenticate" prefHeight="43.0" prefWidth="293.0" style="-fx-background-color: #F18F01; -fx-background-radius: 10;" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="88.0" layoutY="378.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="293.0" style="-fx-border-radius: 10; -fx-background-color: transparent; -fx-border-color: #FFFFFF;" text="REGISTER" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font>
+            </Button>
+            <Text fx:id="textUserExist" fill="#ff4949" strokeType="OUTSIDE" strokeWidth="0.0" text="Esse usúario já existe." visible="false" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
